@@ -46,3 +46,20 @@ variable "enable_detailed_monitoring" {
   type        = bool
   default     = false
 }
+variable "ec2_ami" {
+  description = "AMI ID for the EC2 instance"
+  type        = string
+  default     = "ami-0c02fb55956c7d316" # Ubuntu Server 22.04 LTS (تأكد من المنطقة)
+}
+
+variable "ec2_instance_type" {
+  description = "Type of EC2 instance"
+  type        = string
+  default     = "t2.micro"
+}
+
+variable "ec2_key_name" {
+  description = "Name of the SSH key pair"
+  type        = string
+  default     = "your-key-name" 
+}
