@@ -63,3 +63,7 @@ variable "ec2_key_name" {
   type        = string
   default     = "your-key-name" 
 }
+variable "alb_name" {
+  description = "Name of the Application Load Balancer"
+  default     = "cloudbank-alb"
+}
