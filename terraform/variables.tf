@@ -67,3 +67,14 @@ variable "alb_name" {
   description = "Name of the Application Load Balancer"
   default     = "cloudbank-alb"
 }
+
+
+variable "environment" {
+  description = "Deployment environment (e.g. dev, prod)"
+  default     = "dev"
+}
+
+variable "project_name" {
+  description = "Name of the project"
+  default     = "CloudBankDefender"
+}
